@@ -2,14 +2,15 @@ import React from "react";
 import ReactDOM  from "react-dom";
 
 function App (){
-    const firstName = "Joe"
-    const lastName = "Alwyn"
+    // const firstName = "Joe"
+    // const lastName = "Alwyn"
     /*
         Challenge: finish off the h1 below so it says
         "Hello Joe Alwyn"
     */
+   const date = new Date()
     return(
-        <h1>Hello {firstName} {lastName}</h1>
+        <h1>It is currently about {date.getHours()} o' clock</h1>
     )
 }
 
