@@ -17,24 +17,24 @@ import envicon from "./images/envelope.png"
     Challenge: fix the bug, now that we have destructed the props object
 */
 
-export default function ContactCard({img, name, mobile, email}){
+export default function ContactCard(props){
     return(
        <div className="contact--card">
-            <img src={img}
+            <img src={props.img}
                 alt="Mr.Whiskerson"
             />
-            <h3>{name}</h3>
+            <h3>{props.name}</h3>
             <div className="info-group">
                 <img src={phoneicon}
                     alt="phone-icon" 
                     width="15px"/>
-                <p>{mobile}</p>
+                <p>{props.mobile}</p>
             </div>
             <div className="info-group">
                 <img src={envicon}
                      alt="email-icon"
                      width="20px"/>
-                <p>{email}</p>
+                <p>{props.email}</p>
             </div>
        </div>
     )
