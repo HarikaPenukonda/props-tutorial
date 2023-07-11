@@ -1,5 +1,9 @@
 import React from "react"
-import ContactCard from "./props/ContactCard"
+import ContactCard from "./ContactCard"
+import cat1 from "./images/cat1.jpeg"
+import cat2 from "./images/cat2.jpeg"
+import cat3 from "./images/cat3.jpeg"
+import cat4 from "./images/cat4.jpeg"
 
 /*
     Challenge: Add all the rest of the data to the Contact card instances
@@ -9,27 +13,27 @@ export default function App (){
     return(
         <div className="contacts">
             <ContactCard 
-                img="./images/cat1.jpeg"
+                img={cat1}
                 name="Mr. Whiskerson"
-                phone="(212) 555-1234"
+                mobile="(212) 555-1234"
                 email="mr.whiskaz@catnap.meow"
                 />
             <ContactCard
-                img="./images/cat2.jpeg"
+                img={cat2}
                 name="Fluffykins"
-                phone="(212) 555-2345"
+                mobile="(212) 555-2345"
                 email="fluff@me.com"
             />
             <ContactCard
-                img="./images/cat3.jpeg"
+                img={cat3}
                 name="Felix"
-                phone="(212) 555-4567"
+                mobile="(212) 555-4567"
                 email="thecat@hotmail.com"
             />
             <ContactCard
-                img="./images/cat4.jpeg"
+                img={cat4}
                 name="Pumpkin"
-                phone="(212) 555-1234"
+                mobile="(212) 555-1234"
                 email="pumpkin@gmail.com"
             />
         </div>
