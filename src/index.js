@@ -8,9 +8,9 @@ function App (){
         Challenge: finish off the h1 below so it says
         "Hello Joe Alwyn"
     */
-   const date = new Date()
+   //const date = new Date()
     return(
-        <h1>It is currently about {date.getHours()} o' clock</h1>
+        <h1>It is currently about {new Date().getHours()} o' clock</h1>
     )
 }
 
